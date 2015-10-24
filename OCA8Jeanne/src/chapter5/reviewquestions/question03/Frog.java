@@ -10,10 +10,15 @@ public class Frog implements CanHop{
 		Object frog3 = new TurtleFrog();
 		//Long??? // Error: self-explanatory;
 		
-		// Bonus
-		BrazilianHornedFrog bhf = (BrazilianHornedFrog) new Frog(); //Explicit casting
-		Frog bhf1 = new BrazilianHornedFrog();
-		CanHop bhf2 = new BrazilianHornedFrog();
+		// BONUS
+		//BrazilianHornedFrog bhf = new Frog(); //Doesn't compile
+		BrazilianHornedFrog bhf1 = (BrazilianHornedFrog) new Frog(); //Explicit casting - Compiles OK, but throws an error at Runtime. - Frog isnt a type of BrazilianHornedFrog
+		
+		Frog bhf2 = new BrazilianHornedFrog();
+		BrazilianHornedFrog bhf3 = (BrazilianHornedFrog) bhf2; //Explicit casting
+		
+		Frog bhf4 = new BrazilianHornedFrog();
+		CanHop bhf5 =  new BrazilianHornedFrog();
 	}
 
 }
@@ -23,3 +28,4 @@ class BrazilianHornedFrog extends Frog{}
 class TurtleFrog extends Frog{}
 
 // A, B, D, E
+// Casting - Kind of promise to the JVM
