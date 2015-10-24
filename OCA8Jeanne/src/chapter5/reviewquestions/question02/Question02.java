@@ -1,10 +1,10 @@
-package chapter5.reviewquestions;
+package chapter5.reviewquestions.question02;
 
 public class Question02 {
 
 	public static void main(String[] args) {
 		new Mammal(5); //Prints "Mammal"
-		// Bonus - Prints "Mammal" \n "Platypus"
+		// Bonus - It prints "Mammal" \n "Platypus"
 		new Platypus();
 	}
 
