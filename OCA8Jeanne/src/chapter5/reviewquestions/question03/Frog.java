@@ -12,7 +12,7 @@ public class Frog implements CanHop{
 		
 		// BONUS
 		//BrazilianHornedFrog bhf = new Frog(); //Doesn't compile
-		BrazilianHornedFrog bhf1 = (BrazilianHornedFrog) new Frog(); //Explicit casting - Compiles OK, but throws an error at Runtime. - Frog isnt a type of BrazilianHornedFrog
+		//BrazilianHornedFrog bhf1 = (BrazilianHornedFrog) new Frog(); //Explicit casting - Compiles OK, but throws an error at Runtime. - Frog isnt a type of BrazilianHornedFrog
 		
 		Frog bhf2 = new BrazilianHornedFrog();
 		//BrazilianHornedFrog bhf3 = bhf2; // Doesn't compile
