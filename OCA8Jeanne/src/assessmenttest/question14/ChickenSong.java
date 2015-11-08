@@ -17,6 +17,7 @@ public class ChickenSong
 			//System.out.println("Chicken/After : " + chicken); //Same object as 'Before'
 			System.out.println("Cluck");
 		}
+		
 	}
 
 }
@@ -42,6 +43,8 @@ class Xicken implements HenHouse
 		chickens.add( new Chicken() );
 		chickens.add( new Chicken() );
 		chickens.add( new Chicken() );
+		chickens.add( new Chicken() );
+		chickens.add( new Chicken() );
 	}
 
 	@Override
@@ -51,3 +54,5 @@ class Xicken implements HenHouse
 	}
 	
 }
+
+// D, E, F
